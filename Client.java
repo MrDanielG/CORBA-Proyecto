@@ -30,12 +30,14 @@ public class Client {
                 operacionesImpl = OperacionesHelper.narrow(ncRef.resolve_str(name));
                 Evaluador evaluador = new Evaluador(operacionesImpl);
                 while(!input.isEmpty()) {
-                    System.out.print("=>  ");	
+                    System.out.print(">  ");
                     input=br.readLine();
+                    System.out.print("= ");
                     System.out.println(evaluador.evaluar(input.replaceAll("[^0-9 ]", " $0 "))+ '\n');
-                    
                 }
+                System.out.println("Cerrando conexión...");
                 operacionesImpl.shutdown();
+                System.out.println("Adios!!!");
 
             }catch (Exception e) {
             System.out.println("ERROR : " + e) ;
