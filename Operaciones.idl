@@ -1,0 +1,15 @@
+module OperacionesModule
+{
+  interface Operaciones
+  {
+    string suma(in float lhs, in float rhs);
+    string resta(in float lhs, in float rhs);
+    string division(in float lhs, in float rhs);
+    string multiplicacion(in float lhs, in float rhs);
+    string raizCuadrada(in float a);
+    string cuadrado(in float a);
+    string potenciaN(in float a, in float b);
+    string modulo (in float a, in float b);
+    oneway void shutdown();
+  };
+};

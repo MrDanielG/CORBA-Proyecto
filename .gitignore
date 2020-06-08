@@ -1,0 +1,10 @@
+orb.db/
+orb.db/counter
+orb.db/logs
+orb.db/NC0
+orb.db/servers.db
+OperacionesModule/
+Client.class
+Evaluador.class
+OperacionesImpl.class
+Server.class
